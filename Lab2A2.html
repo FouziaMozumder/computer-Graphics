@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <meta charset ="utf-8" />
+            <title>Second Lab</title>
+                <script type="text/javaScript">
+                 function draw() {
+                     var canvas = document.getElementById("p");
+                     if(canvas.getContext){
+                         var ctx = canvas.getContext('2d');
+                         ctx.fillStyle = 'rgb(153,0,0)';
+                         
+                         
+
+                         ctx.beginPath();
+                         ctx.moveTo(300,250);
+                         ctx.lineTo(350,400);
+                         ctx.lineTo(500,400);
+                         ctx.lineTo(370,460);
+                         ctx.lineTo(445,600);
+                         ctx.lineTo(300,500);
+                         ctx.lineTo(180,600);
+                         ctx.lineTo(235,460);
+                         ctx.lineTo(100,400);
+                         ctx.lineTo(250,400);
+                         ctx.closePath();
+                         ctx.fill();
+
+                     }
+                     
+                 }
+
+            
+            
+                </script>
+        </head>
+
+        <body onload="draw()">
+            <canvas id="p" width="550" height="700"></canvas>
+
+        </body>
+
+     </html>

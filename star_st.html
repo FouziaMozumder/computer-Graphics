@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+            <title>practice</title>
+            <style>
+                canvas{
+                    border: 2px solid blue;
+                }
+            </style>
+            <script>
+                function himi(){
+                    var canvas= document.getElementById('tutorial'), z=100,x=20,y=200;
+                    if(canvas.getContext){
+                        var ctx=canvas.getContext('2d');
+
+                        ctx.beginPath();
+                        ctx.moveTo(z+x-22,y-5);//1
+                        ctx.lineTo(z+x*5.5,y-24);//2
+                        ctx.lineTo(z+x*8,y-130);//
+                        ctx.lineTo(z+x*10.5,y-26);//4
+                        ctx.lineTo(z+x*16.5,y-8);//kona 5--
+                        ctx.lineTo(z+x*12,y+55);//6
+                        ctx.lineTo(z+x*12,y+125);//7 right down kona
+                        ctx.lineTo((z+x*8)+1,y+80);
+                        ctx.lineTo((z+x*3)+10,y+125);//9;left down kona
+                        ctx.lineTo((z+x*4)+20,y+50);//10
+                        ctx.closePath();
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                        ctx.moveTo(z+x,y);//1
+                        ctx.lineTo(z+x*6,y-15);//2
+                        ctx.lineTo(z+x*8,y-100);//
+                        ctx.lineTo(z+x*10,y-15);//4
+                        ctx.lineTo(z+x*15,y);//kona 5--
+                        ctx.lineTo(z+x*11,y+50);//6
+                        ctx.lineTo(z+x*12,y+125);//7 right down kona
+                        ctx.lineTo((z+x*8)+1,y+80);
+                        ctx.lineTo((z+x*3)+10,y+125);//9;left down kona
+                        ctx.lineTo((z+x*4)+20,y+50);//10
+                        ctx.closePath();
+                        ctx.stroke();
+
+                        ctx.beginPath()
+                        ctx.moveTo(z+x,y);
+                        ctx.lineTo(z+x*6,y-15);
+                        ctx.lineTo(z+160,220);
+                        ctx.closePath();
+                        ctx.fill();
+
+                        ctx.beginPath()
+                        ctx.moveTo(z+x*8,y-100);
+                        ctx.lineTo(z+x*10,y-15);
+                        ctx.lineTo(z+160,220);
+                        ctx.closePath();
+                        ctx.fill();
+
+                        ctx.beginPath()
+                        ctx.moveTo(z+x*15,y);
+                        ctx.lineTo(z+x*11,y+50);
+                        ctx.lineTo(z+160,220);
+                        ctx.closePath();
+                        ctx.fill();
+
+                        ctx.beginPath()
+                        ctx.moveTo(z+x*12,y+125);
+                        ctx.lineTo((z+x*8)+1,y+80);
+                        ctx.lineTo(z+160,220);
+                        ctx.closePath();
+                        ctx.fill();
+
+                        ctx.beginPath()
+                        ctx.moveTo(z+(x*3)+10,y+125);
+                        ctx.lineTo(z+(x*4)+20,y+47);
+                        ctx.lineTo(z+160,220);
+                        ctx.closePath();
+                        ctx.fill();
+
+                        
+                       
+                    }
+                }
+            </script>
+        </head>
+        <body onload='himi();'>
+        <canvas id="tutorial" width='500' height='550'></canvas>
+        </body>
+    </html>

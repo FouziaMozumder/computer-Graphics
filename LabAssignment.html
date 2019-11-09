@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+     <head>
+         <meta charset = "utf-8"/>
+         <title>Assignment One</title>
+         <script type="text/javaScript">
+
+         function write(){
+             var canvas = document.getElementById("p");
+              if(canvas.getContext){
+                  var ctx = canvas.getContext('2d');
+                  ctx.fillStyle = 'rgba(153,0,0,0.3)';
+                  ctx.fillRect (0,0,320,380);
+        
+                  ctx.fillStyle = 'rgba(153,0,0)';
+                  ctx.fillRect (10,10,220,20);
+
+                  ctx.fillStyle = 'rgba(100,0,0)';
+                  ctx.fillRect (220,10,20,60);
+                  
+                  ctx.fillStyle = 'rgba(100,0,0)';
+                  ctx.fillRect (10,10,20,350);
+
+                  ctx.fillStyle = 'rgba(153,0,0)';
+                  ctx.fillRect (30,180,150,20);
+
+                  ctx.fillStyle = 'rgba(100,0,0)';
+                  ctx.fillRect (180,160,20,60);
+
+                 
+
+                 
+              }
+         }
+         
+
+         </script>
+         <style>
+                canvas{
+                    border: 4px solid blueviolet;
+                }
+        
+            </style>
+     </head>
+     <body onload="write()">
+    <canvas id="p" width="320" height="380" > </canvas> 
+         
+    </body>
+
+</html>

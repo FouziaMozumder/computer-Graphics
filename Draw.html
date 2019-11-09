@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+ <html>
+  <body>
+
+  <canvas id="myCanvas" width="390" height="400" style="border:6px black">
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+
+ctx.arc(300,170,60,0,2*Math.PI);
+ctx.fillStyle='rgb(252, 219, 25)';
+//ctx.fillStyle="";
+ctx.fill();
+
+
+                        ctx.beginPath();
+                        ctx.moveTo(x=280,y=145);
+                        ctx.lineTo(x+3,y-10);
+                        ctx.lineTo(x+6,y-0.5);
+                        ctx.lineTo(x+14,y);
+                        ctx.lineTo(x+7,y+5);
+                        ctx.lineTo(x+11,y+14);
+                        ctx.lineTo(x+3,y+8);
+                        ctx.lineTo(x-4,y+14);
+                        ctx.lineTo(x-1,y+5);
+                        ctx.lineTo(x-9,y);
+                        ctx.closePath();
+                        ctx.fillStyle="Red"
+                        ctx.fill();
+
+ctx.beginPath();
+ctx.arc(300,185,30,2*Math.PI,Math.PI);
+ctx.fillStyle="red"
+ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(x=315,y=145);
+ctx.lineTo(x+3,y-10);
+ctx.lineTo(x+6,y-0.5);
+ctx.lineTo(x+14,y);
+ctx.lineTo(x+7,y+5);
+ctx.lineTo(x+11,y+14);
+ctx.lineTo(x+3,y+8);
+ctx.lineTo(x-4,y+14);
+ctx.lineTo(x-1,y+5);
+ctx.lineTo(x-9,y);//10
+ctx.closePath();
+ctx.fillStyle="Red"
+ctx.fill();
+
+
+
+</script> 
+<body onload='himi();'>
+    <canvas id="myCanvas" width="390" height="400" style="border:6px black">
+    </canvas>
+    </body>
+</body>
+</html>

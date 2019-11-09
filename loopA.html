@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8"/>
+    <title>Assignment</title>
+    <script type="application/javascript">
+    
+        function himi() {
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            
+            var x=50,y=50,h=22,w=22,i;
+            ctx.fillStyle = 'rgba(153,0,0,0.3)';
+            ctx.fillRect (0,0,320,380);
+            
+            for(i=1,x+=10;i<=150;i++,y+=2)
+            {
+                ctx.fillRect(x,y,10,10);
+            }
+
+            for(i=1,y-=300;i<=90;i++,x+=2)
+            {
+                ctx.fillRect(x,y,10,10);
+            }
+
+            for(i=1,y-=200;i<=90;i++,x+=2)
+            {
+                ctx.fillRect(x,y,10,10);
+            }
+
+
+
+        }
+        }
+    </script>
+
+<style>
+        canvas{
+            border: 2px solid blueviolet;
+        }
+        </style>
+    </head>
+    <body onload="himi();">
+    <canvas id="canvas" width="1350" height="600"></canvas>
+    </body>
+</html>

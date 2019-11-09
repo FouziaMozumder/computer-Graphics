@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+            <title>practice</title>
+            <style>
+              
+            </style>
+            <script>
+                function kupaw(){
+                    var canvas= document.getElementById('tutorial'), x=315,y=145;
+                    if(canvas.getContext){
+                        var ctx=canvas.getContext('2d');
+                        ctx.beginPath();
+                        ctx.moveTo(x,y);//1
+                        ctx.lineTo(x+3,y-10);//2
+                        ctx.lineTo(x+6,y-0.5);//
+                        ctx.lineTo(x+14,y);//4
+                        ctx.lineTo(x+7,y+5);//kona 5--
+                        ctx.lineTo(x+11,y+14);//6
+                        ctx.lineTo(x+3,y+8);//7 right down kona
+                        ctx.lineTo(x-4,y+14);
+                        ctx.lineTo(x-1,y+5);//9;left down kona
+                        ctx.lineTo(x-9,y);//10
+                        ctx.closePath();
+                        ctx.stroke();
+
+                       
+                       
+                       
+                    }
+                }
+            </script>
+        </head>
+        <body onload='kupaw();'>
+        <canvas id="tutorial" width='1360' height='600'></canvas>
+        </body>
+    </html>
